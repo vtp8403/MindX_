@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin: 20px;
+  font-size: 200%;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  grid-template-rows: auto auto auto auto ;
+  grid-gap: 25px;
+  margin: 50px;
+  row-gap: 15px;
+}
+.item {
+  flex-wrap: wrap;
+  grid-row: span 1;
+}
+.item--1 {
+  grid-row: span 2;
+}
+.item img {
+  width: 100%;
+  height: 80%;
+}
