@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS5</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let a = prompt("Nhap so thu nhat:");
+    let b = prompt("Nhap so thu hai:");
+
+    num_a = Number(a);
+    num_b = Number(b);
+
+    function gcd(x,y) {
+            let z = x % y;
+            while ( z != 0) {
+                x = y;
+                y = z;
+                z = x % y;
+            }
+            return y;
+        }
+    
+    function lcm(x,y) {
+        let lcm = 0;
+        gcd = gcd(x,y);
+        lcm = x * y / gcd;
+        return lcm;
+    }
+
+    console.log(`Uoc chung lon nhat cua ${num_a} va ${num_b} la:`);
+    console.log(gcd(num_a,num_b));
+    console.log(`Boi chung nho nhat cua ${num_a} va ${num_b} la:`);
+    console.log(lcm(num_a,num_b));
+</script>
+</html>
