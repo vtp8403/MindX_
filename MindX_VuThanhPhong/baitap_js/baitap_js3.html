@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arrayData = {
+            id: 0,
+            name: 'x',
+            age: 0,
+            point: 0
+        }
+        const arrayData2 = [
+            {
+                id:1,
+                name: 'Nguyen Van A',
+                age:15,
+                point: 200
+            },
+            {
+                id:2,
+                name: 'Nguyen Van B',
+                age:16,
+                point: 100
+            },
+            {
+                id:3,
+                name: 'Nguyen Van C',
+                age:17,
+                point: 400
+            },
+            {
+                id:4,
+                name: 'Nguyen Van D',
+                age:18,
+                point: 250
+            },
+        ]
+            arrayData2.sort((item1,item2) => {
+                return item1.point - item2.point
+            }
+            )
+            for(let arrayData of arrayData2){
+                console.log(`STT: ${arrayData.id} - Họ Tên : ${arrayData.name} - ${arrayData.age} tuổi - ${arrayData.point} điểm`);
+            }
+
+
+    </script>
+</body>
+</html>
